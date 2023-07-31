@@ -45,7 +45,7 @@
             // pipeTop
             // 
             this.pipeTop.Image = ((System.Drawing.Image)(resources.GetObject("pipeTop.Image")));
-            this.pipeTop.Location = new System.Drawing.Point(550, 0);
+            this.pipeTop.Location = new System.Drawing.Point(450, 0);
             this.pipeTop.Name = "pipeTop";
             this.pipeTop.Size = new System.Drawing.Size(80, 200);
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,6 +94,7 @@
             // 
             // gameTimer
             // 
+            this.gameTimer.Enabled = true;
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
@@ -108,6 +109,7 @@
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.flappyBird);
             this.Controls.Add(this.pipeTop);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Flappy bird";
