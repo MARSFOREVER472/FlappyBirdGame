@@ -7,8 +7,13 @@
 En este tutorial aprenderás a:
 
 1.- Cómo usar el cuadro de imagen en Visual Studio.
+
 2.- Cómo usar funciones en C#.
+
 3.- Cómo usar eventos en C# y Visual Studio.
+
 4.- Cómo usar el evento del teclado en C#.
+
 5.- Cómo usar el evento del temporizador en C#.
+
 6.- Creación y detección de colisión de objetos en C#.
