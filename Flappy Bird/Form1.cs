@@ -36,15 +36,18 @@ namespace Flappy_Bird
             flappyBird.Top += gravedad; // Se enlaza el cuadro de imagen del Flappy Bird a la gravedad, += significa que agregará la velocidad de la gravedad a la ubicación superior del cuadro de imagen para que se mueva hacia abajo.
             pipeBottom.Left -= velocidadTuberia; // Se enlaza la posición horizontal de las tuberías inferiores al valor entero de velocidad de la tubería, reducirá el valor de la velocidad de la tubería desde la posición horizontal del cuadro de imagen de la tubería, por lo que se moverá hacia la izquierda con cada tick.
             pipeTop.Left -= velocidadTuberia; // Lo mismo va a suceder con la tubería superior, reduzca el valor del número entero de velocidad de la tubería desde la posición horizontal de la tubería usando el signo -=.
+            lblScore.Text = "Score: " + puntuacion; // Muestra la puntuación actual en la etiqueta de texto de puntuación.
 
             if (pipeBottom.Left < -50)
             {
                 pipeBottom.Left = 800; // Si la ubicación de las tuberías inferiores es -50, la restableceremos a 800 y agregaremos 1 a la puntuación.
+                puntuacion++; 
             }
 
             if (pipeTop.Left < -80)
             {
                 pipeTop.Left = 950; // Si la ubicación de la tubería superior es -80, restableceremos la tubería a 950 y agregaremos 1 a la puntuación.
+                puntuacion++;
             }
         }
 
@@ -70,6 +73,13 @@ namespace Flappy_Bird
 
                 gravedad = 5;
             }
+        }
+
+        private void endGame()
+        {
+            // Esta es la función de finalización del juego, y ésta se activará cuando el personaje toque el suelo o las tuberías.
+
+
         }
     }
 }
