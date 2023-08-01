@@ -17,7 +17,7 @@ namespace Flappy_Bird
         // Las variables iniciales empiezan aquí.
 
         int velocidadTuberia = 8; // La velocidad de tubería predeterminada definida por un entero.
-        int gravedad = 15; // La velocidad de gravedad predeterminada definida por un entero.
+        int gravedad = 5; // La velocidad de gravedad predeterminada definida por un entero.
         int puntuacion = 0; // Entero de puntuación predeterminado establecido en 0.
 
         // Las variables terminaron aquí al final.
@@ -44,7 +44,7 @@ namespace Flappy_Bird
             {
                 // Si se presiona la tecla Espacio, la gravedad se establecerá en -15.
 
-                gravedad = -15;
+                gravedad = -5;
             }
         }
 
@@ -56,7 +56,7 @@ namespace Flappy_Bird
             {
                 // Si se suelta la tecla de espacio, la gravedad vuelve a 15.
 
-                gravedad = 15;
+                gravedad = 5;
             }
         }
     }
