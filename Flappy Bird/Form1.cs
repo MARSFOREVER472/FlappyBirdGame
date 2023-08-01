@@ -49,6 +49,26 @@ namespace Flappy_Bird
                 pipeTop.Left = 950; // Si la ubicación de la tubería superior es -80, restableceremos la tubería a 950 y agregaremos 1 a la puntuación.
                 puntuacion++;
             }
+
+            // La condición if a continuación verifica si la tubería golpeó el suelo, las tuberías o si el jugador ha salido de la pantalla desde la parte superior.
+            // Los dos símbolos de una tubería representan OR dentro de una declaración if, por lo que podemos tener varias condiciones dentro de esta declaración if porque todas van a hacer lo mismo.
+
+            if (flappyBird.Bounds.IntersectsWith(pipeBottom.Bounds) ||
+                flappyBird.Bounds.IntersectsWith(pipeTop.Bounds) ||
+                flappyBird.Bounds.IntersectsWith(ground.Bounds) || flappyBird.Top < -25
+                )
+            {
+                // Si se cumple algunas de las condiciones anteriores, ejecutaremos la función de finalización del juego.
+
+                endGame();
+            }
+
+            // Si la puntuación es mayor que 5, aumentaremos la velocidad de la tubería en 15.
+
+            if (puntuacion > 5)
+            {
+                velocidadTuberia = 15;
+            }
         }
 
         private void gamekeyisdown(object sender, KeyEventArgs e)
@@ -79,7 +99,8 @@ namespace Flappy_Bird
         {
             // Esta es la función de finalización del juego, y ésta se activará cuando el personaje toque el suelo o las tuberías.
 
-
+            gameTimer.Stop(); // Detiene el temporizador.
+            lblScore.Text += " JUEGO TERMINADO!!!"; // muestra el texto del juego terminado en el texto de la puntuación, += se usa para agregar la nueva cadena de texto junto a la puntuación en vez de omitirla.
         }
     }
 }
