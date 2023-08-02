@@ -20,6 +20,8 @@ namespace Flappy_Bird
         int gravedad = 5; // La velocidad de gravedad predeterminada definida por un entero.
         int puntuacion = 0; // Entero de puntuación predeterminado establecido en 0.
 
+        bool gameOver = false; // No termina la partida por el momento.
+
         // Las variables terminaron aquí al final.
 
         public Form1()
@@ -93,6 +95,29 @@ namespace Flappy_Bird
 
                 gravedad = 5;
             }
+
+            if (e.KeyCode == Keys.R && gameOver)
+            {
+                // Ejecuta la función de reiniciar el juego.
+
+                RestartGame();
+
+            }
+        }
+
+        private void RestartGame()
+        {
+            // Esta es la función de reiniciar automáticamente el juego cuando presiona la tecla R.
+
+            gameOver = false; // No termina la partida en este método.
+            flappyBird.Location = new Point(100, 250); // Esta será la posición en donde se encontrará el personaje al reiniciar el juego.
+            pipeTop.Left = 800; // La tubería es de arriba que se aproxima a 800 metros por cada una de ellas que pase.
+            pipeBottom.Left = 1200; // La tubería es de abajo que se aproxima a 1200 metros por cada una de ellas que pase.
+
+            puntuacion = 0; // La puntuación para este método del juego se inicializa en 0.
+            velocidadTuberia = 8; // La velocidad que pase por cada tubería se inicializa en 8.
+            lblScore.Text = "Score: 0"; // Score: 0.
+            gameTimer.Start(); // Inicia el temporizador al comienzo del juego.
         }
 
         private void endGame()
@@ -100,7 +125,8 @@ namespace Flappy_Bird
             // Esta es la función de finalización del juego, y ésta se activará cuando el personaje toque el suelo o las tuberías.
 
             gameTimer.Stop(); // Detiene el temporizador.
-            lblScore.Text += " JUEGO TERMINADO!!!"; // muestra el texto del juego terminado en el texto de la puntuación, += se usa para agregar la nueva cadena de texto junto a la puntuación en vez de omitirla.
+            lblScore.Text += " GAME OVER!!! Press R to restart"; // muestra el texto del juego terminado en el texto de la puntuación, += se usa para agregar la nueva cadena de texto junto a la puntuación en vez de omitirla.
+            gameOver = true; // Termina la partida.
         }
     }
 }
