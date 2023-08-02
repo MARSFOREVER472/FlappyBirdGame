@@ -85,9 +85,9 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.BackColor = System.Drawing.Color.Transparent;
+            this.lblScore.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.lblScore.Font = new System.Drawing.Font("Eras Bold ITC", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.Location = new System.Drawing.Point(10, 15);
+            this.lblScore.Location = new System.Drawing.Point(23, 660);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(124, 33);
             this.lblScore.TabIndex = 4;
@@ -106,10 +106,10 @@
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(678, 744);
             this.Controls.Add(this.flappyBird);
-            this.Controls.Add(this.ground);
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.pipeTop);
             this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.ground);
             this.KeyPreview = true;
             this.Name = "Form1";
             this.ShowIcon = false;
