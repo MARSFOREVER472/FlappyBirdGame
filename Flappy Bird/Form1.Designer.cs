@@ -36,10 +36,12 @@
             this.ground = new System.Windows.Forms.PictureBox();
             this.lblScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.restartPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restartPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // pipeTop
@@ -99,12 +101,24 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
             // 
+            // restartPicture
+            // 
+            this.restartPicture.Image = ((System.Drawing.Image)(resources.GetObject("restartPicture.Image")));
+            this.restartPicture.Location = new System.Drawing.Point(200, 225);
+            this.restartPicture.Name = "restartPicture";
+            this.restartPicture.Size = new System.Drawing.Size(300, 100);
+            this.restartPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.restartPicture.TabIndex = 5;
+            this.restartPicture.TabStop = false;
+            this.restartPicture.Click += new System.EventHandler(this.RestartClickEvent);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(678, 744);
+            this.Controls.Add(this.restartPicture);
             this.Controls.Add(this.flappyBird);
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.pipeTop);
@@ -120,6 +134,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restartPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +148,7 @@
         private System.Windows.Forms.PictureBox ground;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.PictureBox restartPicture;
     }
 }
 

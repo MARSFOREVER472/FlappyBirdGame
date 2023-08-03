@@ -27,6 +27,7 @@ namespace Flappy_Bird
         public Form1()
         {
             InitializeComponent();
+            RestartGame(); // Llamado del método anterior para reiniciar desde la interfaz del juego. 
         }
 
         // Métodos fundamentales del juego.
@@ -118,6 +119,9 @@ namespace Flappy_Bird
             velocidadTuberia = 8; // La velocidad que pase por cada tubería se inicializa en 8.
             lblScore.Text = "Score: 0"; // Score: 0.
             gameTimer.Start(); // Inicia el temporizador al comienzo del juego.
+
+            restartPicture.Enabled = false; // No está activado la imagen de reinicio. (Restart Button ya importado recientemente).
+            restartPicture.Visible = false; // La visibilidad para este componente o imagen se desactivará por el momento.
         }
 
         private void endGame()
@@ -127,6 +131,18 @@ namespace Flappy_Bird
             gameTimer.Stop(); // Detiene el temporizador.
             lblScore.Text += " GAME OVER!!! Press R to restart"; // muestra el texto del juego terminado en el texto de la puntuación, += se usa para agregar la nueva cadena de texto junto a la puntuación en vez de omitirla.
             gameOver = true; // Termina la partida.
+
+            // Haremos lo mismo cuando finaliza una partida pero esta vez se hace lo contrario.
+
+            restartPicture.Enabled = true; // Está activado la imagen de reinicio. (Restart Button ya importado recientemente).
+            restartPicture.Visible = true; // La visibilidad para este componente o imagen va a estar disponible cuando finaliza la partida..
+        }
+
+        private void RestartClickEvent(object sender, EventArgs e)
+        {
+            // Este es un evento al hacer click el botón de reiniciar el juego.
+
+            RestartGame(); // Se hace un llamado al método ya creado para reiniciar el juego.
         }
     }
 }
