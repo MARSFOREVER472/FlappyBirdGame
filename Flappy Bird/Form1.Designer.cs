@@ -46,6 +46,7 @@
             // 
             // pipeTop
             // 
+            this.pipeTop.BackColor = System.Drawing.Color.Transparent;
             this.pipeTop.Image = ((System.Drawing.Image)(resources.GetObject("pipeTop.Image")));
             this.pipeTop.Location = new System.Drawing.Point(450, 0);
             this.pipeTop.Name = "pipeTop";
@@ -56,6 +57,7 @@
             // 
             // flappyBird
             // 
+            this.flappyBird.BackColor = System.Drawing.Color.Transparent;
             this.flappyBird.Image = ((System.Drawing.Image)(resources.GetObject("flappyBird.Image")));
             this.flappyBird.Location = new System.Drawing.Point(100, 250);
             this.flappyBird.Name = "flappyBird";
@@ -66,6 +68,7 @@
             // 
             // pipeBottom
             // 
+            this.pipeBottom.BackColor = System.Drawing.Color.Transparent;
             this.pipeBottom.Image = ((System.Drawing.Image)(resources.GetObject("pipeBottom.Image")));
             this.pipeBottom.Location = new System.Drawing.Point(450, 350);
             this.pipeBottom.Name = "pipeBottom";
@@ -76,6 +79,7 @@
             // 
             // ground
             // 
+            this.ground.BackColor = System.Drawing.Color.Transparent;
             this.ground.Image = ((System.Drawing.Image)(resources.GetObject("ground.Image")));
             this.ground.Location = new System.Drawing.Point(0, 597);
             this.ground.Name = "ground";

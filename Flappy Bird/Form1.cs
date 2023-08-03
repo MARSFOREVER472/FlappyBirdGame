@@ -21,6 +21,7 @@ namespace Flappy_Bird
         int puntuacion = 0; // Entero de puntuación predeterminado establecido en 0.
 
         bool gameOver = false; // No termina la partida por el momento.
+        Random rnd = new Random(); // Variable aleatoria.
 
         // Las variables terminaron aquí al final.
 
@@ -48,15 +49,15 @@ namespace Flappy_Bird
             pipeTop.Left -= velocidadTuberia; // Lo mismo va a suceder con la tubería superior, reduzca el valor del número entero de velocidad de la tubería desde la posición horizontal de la tubería usando el signo -=.
             lblScore.Text = "Score: " + puntuacion; // Muestra la puntuación actual en la etiqueta de texto de puntuación.
 
-            if (pipeBottom.Left < -50)
+            if (pipeBottom.Left < -150)
             {
-                pipeBottom.Left = 800; // Si la ubicación de las tuberías inferiores es -50, la restableceremos a 800 y agregaremos 1 a la puntuación.
-                puntuacion++; 
+                pipeBottom.Left = rnd.Next(750, 1300); // La posición esperada de la tubería puede ser infinita.
+                puntuacion++;
             }
 
-            if (pipeTop.Left < -80)
+            if (pipeTop.Left < -180)
             {
-                pipeTop.Left = 950; // Si la ubicación de la tubería superior es -80, restableceremos la tubería a 950 y agregaremos 1 a la puntuación.
+                pipeTop.Left = rnd.Next(850, 1500); // La posición esperada de la tubería puede ser infinita.
                 puntuacion++;
             }
 
