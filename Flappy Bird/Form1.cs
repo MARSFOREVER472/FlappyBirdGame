@@ -27,6 +27,13 @@ namespace Flappy_Bird
         public Form1()
         {
             InitializeComponent();
+
+            // Para que se vea mucho mejor, vamos a declarar variables hacia la etiqueta de texto en el piso del juego.
+
+            ground.Controls.Add(lblScore); // Añadiremos controles a la etiqueta de texto.
+            lblScore.Left = 20; // Texto en la posición en X.
+            lblScore.Top = 25; // Texto en la posición en Y.
+
             RestartGame(); // Llamado del método anterior para reiniciar desde la interfaz del juego. 
         }
 
