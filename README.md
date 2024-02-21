@@ -6,7 +6,7 @@
 
 **En este tutorial aprenderás a:**
 
-1.- Cómo usar el cuadro de imagen en Visual Studio.
+1.- _Cómo usar el cuadro de imagen en Visual Studio._
 
 2.- Cómo usar funciones en C#.
 
