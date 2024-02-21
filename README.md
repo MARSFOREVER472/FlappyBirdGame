@@ -4,7 +4,7 @@
 - _Para ello se necesitará el Microsoft Visual Studio para poder seguir este tutorial._
 - _También aprenderás cómo funciona la colisión de objetos en C# y cómo animar objetos usando algunas variables._
 
-En este tutorial aprenderás a:
+**En este tutorial aprenderás a:**
 
 1.- Cómo usar el cuadro de imagen en Visual Studio.
 
