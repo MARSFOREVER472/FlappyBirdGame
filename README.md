@@ -14,6 +14,6 @@
 
 4.- **_Cómo usar uno o más eventos del teclado en C#._**
 
-5.- **_Cómo usar el evento del temporizador en C#._**
+5.- **_Cómo usar un evento del temporizador en C#._**
 
 6.- **_Creación y detección de colisión de objetos en C#._**
