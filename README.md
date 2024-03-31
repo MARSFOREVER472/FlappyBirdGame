@@ -6,7 +6,7 @@
 
 **En este tutorial aprenderás a:**
 
-1.- **_Cómo utilizar una interfaz visible en Visual Studio._**
+1.- **_Cómo utilizar una interfaz visible en Microsoft Visual Studio._**
 
 2.- **_Cómo usar funciones en C#._**
 
