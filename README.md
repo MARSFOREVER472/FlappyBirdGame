@@ -2,7 +2,7 @@
 
 - **_En este tutorial te enseñamos a cómo crear un juego Flappy Bird en Visual Studio mediante el lenguaje de programación en C# y Windows Forms._**
 - **_Para ello se utilizará la herramienta Microsoft Visual Studio para poder seguir este tutorial._**
-- **_También aprenderás a cómo interactuar la colisión de objetos en C# y cómo animar objetos usando algunas variables._**
+- **_También aprenderás a cómo interactuar la colisión de objetos en C# y animar objetos usando algunas variables._**
 
 **En este tutorial aprenderás a:**
 
