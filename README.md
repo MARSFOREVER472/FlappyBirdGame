@@ -12,7 +12,7 @@
 
 3.- **_Cómo programar eventos en C# y Visual Studio._**
 
-4.- **_Cómo usar un evento del teclado en C#._**
+4.- **_Cómo usar uno o más eventos del teclado en C#._**
 
 5.- **_Cómo usar el evento del temporizador en C#._**
 
