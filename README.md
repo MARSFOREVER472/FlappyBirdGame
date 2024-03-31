@@ -16,4 +16,4 @@
 
 5.- **_Cómo usar el evento del temporizador en C#._**
 
-6.- _Creación y detección de colisión de objetos en C#._
+6.- **_Creación y detección de colisión de objetos en C#._**
