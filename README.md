@@ -8,7 +8,7 @@
 
 1.- **_Cómo usar el cuadro de imagen en Visual Studio._**
 
-2.- _Cómo usar funciones en C#._
+2.- **_Cómo usar funciones en C#._**
 
 3.- _Cómo usar eventos en C# y Visual Studio._
 
