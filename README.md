@@ -10,7 +10,7 @@
 
 2.- **_Cómo usar funciones en C#._**
 
-3.- _Cómo usar eventos en C# y Visual Studio._
+3.- **_Cómo usar eventos en C# y Visual Studio._**
 
 4.- _Cómo usar el evento del teclado en C#._
 
